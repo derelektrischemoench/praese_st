@@ -122,8 +122,10 @@
 				<h3>Weitere Gründe für die Entwicklung von OO- Metriken:</h3>
 			</div>
 			<div class="row">
-				<span>- objektorientierter Code unterscheidet sich durch</span>
-				<ul>
+				<span>objektorientierter Code unterscheidet sich durch</span>
+			</div>
+			<div class="row">
+				<ul class="dashed">
 					<li>Encapsulation</li>
 					<li>Datenabstraktion</li>
 					<li>Polymorphismus</li>
@@ -175,10 +177,55 @@
 					<li>Komplexitätsmaß: M = b+1 (M = b+p bei mehreren Graphen)</li>
 					<li>B = Anzahl der Binärverzweigungen</li>
 					<li>P = Anzahl an Kontrollflussgraphen</li>
-					<li></li>
+
 				</ul>
 			</div>
 		</section>
+
+		<section class="slide12">
+			<div class="row">
+				Berechnung durch Anzahl der Knoten und Kanten:
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Es gilt: M = e-n+2p</li>
+					<li>e = Anzahl der Kanten</li>
+					<li>n = Anzahl der Knoten</li>
+					<li>p = Anzahl der Zusammenhangskomponenten</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide13">
+			<div class="row">
+				Beispiel: -> <!--TODO: Beispiel einfügen!--> TODO: Beispiel einfügen!!
+				<ul class="dashed">
+					<li>Sequenz: M = 1-2+2*1 = 1</li>
+					<li>Auswahl: M = 4-4+2*1 = 2</li>
+					<li>Schleife: M = 3-3+2*1 = 2</li>
+					<li>p = Anzahl der Zusammenhangskomponenten</li>
+				</ul>
+
+			</div>
+		</section>
+
+		<section class="slide14">
+			<div class="row">
+				<h3>Interpretation und Kritik:</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Komplexität eines Teilprogrammes sollte nicht > 10 sein</li>
+					<li>Umstritten, da nur Anweisungen wie <span class="codeBlue">if</span> die Komplexität erhöhen</li>
+					<li>Dadurch kann nur eine Aussage über den Testaufwand getroffen werden</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide15">
+			<h1 class="codeBlue">CBO - Coupling between objects</h1>
+		</section>
+
 
 		<!-- TODO: run grunt and shit-->
 	</div>
