@@ -26,12 +26,11 @@
 <div class="reveal">
 	<div class="slides">
 		<section class="slide1"><!-- SLIDE 1 -->
-			<h5>
-				<span class="fragment fade-up curlybrace codeBlue" data-fragment-index="3">{</span>
+			<h1>
+				<span class="fragment codeBlue" data-fragment-index="0">{</span>
 				<span class="fragment" data-fragment-index="1">OO- Codemetriken</span>
-				<span class="fragment fade-down curlybrace codeBlue" data-fragment-index="3">}</span>
-			</h5>
-			<h5 class="fragment" data-fragment-index="2">1 An introduction</h5>
+				<span class="fragment codeBlue" data-fragment-index="0">}</span>
+			</h1>
 		</section>
 
 		<section class="slide2"><!-- slide 3 -->
@@ -224,6 +223,73 @@
 
 		<section class="slide15">
 			<h1 class="codeBlue">CBO - Coupling between objects</h1>
+		</section>
+
+		<section class="slide16">
+				<div class="row">
+					<ul class="dashed">
+						<li>Metrik zur Bestimmung der Kopplung zwischen Objekten</li>
+						<li>Berücksichtigt die Anzahl der Klassen, welche mit dem Objekt gekoppelt sind, nicht die Häufigkeit der Verwendung</li>
+						<li>Berücksichtigt die Vererbungshierarchie</li>
+						<li>Dient zur Feststellung der Test- und Wartbarkeit</li>
+					</ul>
+				</div>
+		</section>
+
+		<section class="slide17">
+			<div class="row">
+				<ul class="dashed">
+					<li>Analyse auf Modul/Package- Ebene, <br>da hier das Ergebnis besoders relevant ist</li>
+					<li>Ermittlung des Wertes unter Berücksichtigung der Gesamtzahl an Klassen und gekoppelten Klassen je Klasse</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide18">
+			<div class="row">
+				<h3>Interpretation der gewonnenen Werte</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li><span class="CodeBlue">0</span> = keine Verbindung zu anderen Klassen</li>
+					<li><span class="CodeBlue">niedrige Werte (<=5)</span> = optimal <br> <span class="codeBlue">-> </span>lose Kopplung der Klasse zu den Anderen</li>
+					<li><span class="CodeBlue">hohe Werte (>8)</span> = starke Kopplung <br><span class="codeBlue">-> </span>schwere Wart- und Testbarkeit</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide19">
+			<div class="row">
+				<h3>Schwierigkeiten:</h3>
+			</div>
+			<div class="row">
+				Schlecht testbar<span class="codeBlue">,</span> da für jeden Testcase eine hohe Anzahl an Abhängigkeiten
+			</div>
+		</section>
+
+		<section class="slide20">
+			<div class="row">
+				<h3>Vorteile:</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Sprachunabhängig, generell für OO - Konzepte gültig</li>
+					<li>Einfache Offenlegung problematischer Kopplung in einem Package</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide21">
+			<div class="row">
+				<h3>Nachteile</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Wie werden Thresholds defniniert?</li>
+					<li>Worin liegt die Güte?</li>
+					<li>Verschiedene Vorgehensweisen möglich</li>
+				</ul>
+			</div>
 		</section>
 
 
