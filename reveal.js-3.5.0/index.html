@@ -69,21 +69,21 @@
 			<div class="flex-row">
 				<div class="flex-col">
 					<div class="fragment" data-fragment-index="0">
-						- reuse
+						<span class="codeBlue">- </span><span>reuse</span><br>
 					</div>
 				</div>
 			</div>
 			<div class="flex-row">
 				<div class="flex-col">
 					<div class="fragment" data-fragment-index="1">
-						- Vererbung
+						<span class="codeBlue">- </span><span>Vererbung</span><br>
 					</div>
 				</div>
 			</div>
 			<div class="flex-row">
 				<div class="flex-col">
-					<div class="fragment" data-fragment-index="1">
-						- Polymorphismus
+					<div class="fragment" data-fragment-index="2">
+						<span class="codeBlue">- </span><span>Polymorphismus</span><br>
 					</div>
 				</div>
 			</div>
@@ -93,16 +93,94 @@
 			<h5>-> LOC nicht mehr aussagekräftig genug</h5>
 			<div class="flex-row">
 				<div class="flex-col">
-					<div class="fragment">
-						<h3>Zeit für Objektorientierte Metriken -> Beispiel einfügen</h3>
+					<div class="fragment" data-fragment-index="0">
+						<h5>Zeit für</h5>
+					</div>
+					<div class="fragment" data-fragment-index="2">
+						<h2 class="codeBlue">objektorientierte Metriken</h2>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="slide5">
+			<h1>OO Metriken</h1>
+			<div class="flex-row">
+				<div class="flex-col">Evaluieren Konzepte wie:</div>
+			</div>
+			<div class="row">
+				<span class="codeBlue">- </span><span>Größe</span><br>
+				<span class="codeBlue">- </span><span>Komplexität</span><br>
+				<span class="codeBlue">- </span><span>Kopplung und Kohäsion</span><br>
+				<span class="codeBlue">- </span><span>Vollständigkeit</span><br>
+				<span class="codeBlue">- </span><span>Ähnlichkeit zwischen Klassen</span><br>
+			</div>
+		</section>
 
+		<section class="slide6">
+			<div class="row">
+				<h3>Weitere Gründe für die Entwicklung von OO- Metriken:</h3>
+			</div>
+			<div class="row">
+				<span>- objektorientierter Code unterscheidet sich durch</span>
+				<ul>
+					<li>Encapsulation</li>
+					<li>Datenabstraktion</li>
+					<li>Polymorphismus</li>
+					<li>Vererbung</li>
+				</ul>
+			</div>
+		</section>
 
-<!-- TODO: run grunt and shit-->
+		<section class="slide7">
+			<div class="row">
+				<h3>Führt zu</h3>
+			</div>
+			<div class="row">
+				<h4>"Dezentralisierung" von Code, eine Zeile Code kann häufiger verwendet werden und erfüllt mehrere Funktionen</h4>
+		</div>
+		</section>
+
+		<section class="slide8">
+			<div class="row">
+				<span class="codeBlue">-> </span>Alternative Metriken werden benötigt
+
+			</div>
+		</section>
+
+		<section class="slide9">
+			<h1 class="codeBlue">McCabe- Metrik</h1>
+		</section>
+
+		<section class="slide10">
+			<div class="row">
+				<h3>Auch als <span class="codeBlue">zyklomatische Komplexität </span> bekannt</h3>
+			</div>
+		</section>
+
+		<section class="slide11">
+			<div class="row">
+				<h3>Per <span class="codeBlue">Definition</span>:</h3>
+				<h4>Anzahl linear unabhängiger Pfade auf dem Kontrollflussgraph</h4>
+				<h4>Stellt gleichzeitig auch die obere Grenze für die Anzahl an minimalen Testfällen um eine vollständige Zweigüberdeckung zu erhalten</h4>
+			</div>
+		</section>
+
+		<section class="slide12">
+			<div class="row">
+				Berechnung durch Anzahl der Binärzweige:
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Komplexitätsmaß: M = b+1 (M = b+p bei mehreren Graphen)</li>
+					<li>B = Anzahl der Binärverzweigungen</li>
+					<li>P = Anzahl an Kontrollflussgraphen</li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- TODO: run grunt and shit-->
 	</div>
 </div>
 

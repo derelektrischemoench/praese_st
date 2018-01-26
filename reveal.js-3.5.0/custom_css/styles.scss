@@ -79,6 +79,8 @@ ul {
 
 .reveal {
   .slides {
+    text-align: left;
+
     .present {
       font-family: 'RobotoMonoRegular', serif;
       font-weight: 300;
@@ -109,253 +111,8 @@ ul {
 
       overflow: hidden;
     }
-
-    .slide3 {
-
-      h5 {
-        margin-bottom: 10px;
-      }
-      .flex-col {
-        margin: 10px;
-      }
-
-      .flex-row:nth-of-type(1) {
-        > .flex-col {
-          font-size: 32px;
-          margin-bottom: 0;
-        }
-      }
-
-      .flex-row:nth-of-type(2) {
-        .flex-col {
-          margin-top: -10px;
-        }
-      }
-
-      pre {
-        margin-top: 0;
-      }
-
-    }
-
-    .slide5 {
-      h2 {
-        margin: 100px 0;
-      }
-    }
-
-    .slide6 {
-      .flex-row {
-        overflow: visible !important;
-      }
-
-      code {
-        font-size: 18px;
-      }
-    }
-
-    .slide9 {
-      p:nth-of-type(3) {
-        margin-top: -20px;
-      }
-
-      p:nth-of-type(2),
-      p:nth-of-type(4) {
-        margin-bottom: -10px;
-      }
-
-      pre {
-        margin-top: 0;
-      }
-
-    }
-
-    .slide10 {
-      code {
-        padding: 0 !important;
-      }
-    }
-
-    .slide10,
-    .slide9 {
-      pre,
-      p {
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-top: 0;
-      }
-
-      pre {
-        margin-top: 0;
-      }
-    }
-
-    .slide11,
-    .slide12 {
-      span {
-        font-size: 32px;
-      }
-    }
-
-    .slide14 {
-      padding-top: 0;
-
-      pre:first-of-type {
-        margin-bottom: 0;
-      }
-    }
-
-    .slide15,
-    .slide16,
-    .slide21,
-    .slide26 {
-      pre:first-of-type {
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-top: 0;
-      }
-    }
-
-    .slide24 {
-      p {
-        text-align: center;
-      }
-
-      pre {
-        font-size: 18px;
-      }
-    }
-
-    .slide25 {
-      p {
-        text-align: center;
-      }
-    }
-
-    .slide27 {
-      padding-top: 0;
-      display: flex !important;
-      flex-direction: column;
-      justify-content: center !important;
-
-      .sectionwrapper {
-        flex: 1;
-      }
-
-      code {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-
-      pre {
-        margin-top: 0;
-        margin-bottom: -5%;
-      }
-
-      code {
-        font-size: 16px;
-      }
-
-      p {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    }
-
-    .slide28 {
-      code {
-        font-size: 18px;
-      }
-    }
-
-    .slide31 {
-      .downarrow {
-        text-align: center;
-      }
-
-      .sectionwrapper {
-        margin-top: -40px;
-
-        code {
-          padding: 0;
-          font-size: 17px;
-        }
-
-        > .flex-row:first-of-type {
-          > .arrow-container {
-            position: relative;
-            top: 60px;
-          }
-        }
-
-        > .flex-row:nth-of-type(2) {
-          margin: -110px 0 -30px 0;
-        }
-
-        > .flex-row:nth-of-type(3) {
-          > .flex-col {
-            > .codesample {
-              > pre {
-                margin-top: 0;
-                margin-bottom: 0;
-              }
-            }
-          }
-        }
-        > .flex-row:nth-of-type(4) {
-          p {
-            margin-top: 0;
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .slide36 {
-      .codesample {
-        font-size: 28px;
-      }
-
-      .flex-row {
-        .flex-col:not(:nth-of-type(2)) {
-          flex: 9;
-        }
-      }
-    }
-
-    .slide40 {
-      pre {
-        font-size: 12px;
-      }
-
-      .flex-row:nth-of-type(1) {
-
-        .flex-col:nth-of-type(1),
-        .flex-col:nth-of-type(3) {
-          flex: 8;
-        }
-
-        .flex-col:nth-of-type(2) {
-          flex: 1;
-        }
-      }
-    }
-
-    .slide44 {
-      img {
-        background-color: #fff;
-      }
-    }
-
-    .arrow-container {
-      display: flex;
-      flex-direction: row;
-    }
   }
+
 } // end of .reveal
 
 //standalone declarations
@@ -370,4 +127,30 @@ code {
 
 .arrow-container {
   justify-content: center;
+}
+
+span {
+  display: inline;
+}
+
+.row {
+  -ms-text-align-last: left;
+  text-align-last: left;
+}
+
+ul.dashed {
+  list-style-type: none;
+  position: relative;
+  left: 30px;
+
+  >li {
+    text-indent: -50px;
+  }
+
+  >li:before {
+    content: '- ';
+    text-indent: -35px;
+    @include codeBlue();
+
+  }
 }
