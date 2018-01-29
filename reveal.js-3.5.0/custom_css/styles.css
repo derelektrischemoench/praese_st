@@ -134,4 +134,8 @@ ul.dashed {
 .slide12 {
   text-align: center; }
 
+.slide13 .flex-row img {
+  width: 100%;
+  height: auto; }
+
 /*# sourceMappingURL=styles.css.map */
