@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<link rel="stylesheet" href="custom_css/styles.css">
 
+
+
+
 	<!-- Printing and PDF exports -->
 	<script>
     var link = document.createElement('link');
@@ -91,10 +94,10 @@
 		<section class="slide4">
 			<div class="flex-row">
 				<div class="flex-col">
-					<div class="fragment" data-fragment-index="0">
-						<h5>Zeit für</h5>
-					</div>
-					<div class="fragment" data-fragment-index="2">
+
+					<h5>Zeit für</h5>
+
+					<div class="fragment" data-fragment-index="1">
 						<h2 class="codeBlue">objektorientierte Metriken</h2>
 					</div>
 				</div>
@@ -137,18 +140,16 @@
 				<h3>Führt zu</h3>
 			</div>
 			<div class="row">
-				<h4>"Dezentralisierung" von Code<span class="codeBlue">,</span> eine Zeile Code kann häufiger verwendet werden und erfüllt mehrere Funktionen</h4>
-		</div>
+				<h4>"Dezentralisierung" von Code<span class="codeBlue">,</span> eine Zeile Code kann häufiger verwendet werden
+					und erfüllt mehrere Funktionen</h4>
+			</div>
 		</section>
 
 		<section class="slide8">
 			<div class="row">
 				<div class="col">
 					<span class="codeBlue">&rAarr; </span> Alternative Metriken werden benötigt
-
 				</div>
-
-
 			</div>
 		</section>
 
@@ -166,7 +167,8 @@
 			<div class="row">
 				<h3>Per <span class="codeBlue">Definition</span>:</h3>
 				<h4>Anzahl linear unabhängiger Pfade auf dem Kontrollflussgraph</h4>
-				<h4>Stellt gleichzeitig auch die obere Grenze für die Anzahl an minimalen Testfällen um eine vollständige Zweigüberdeckung zu erhalten</h4>
+				<h4>Stellt gleichzeitig auch die obere Grenze für die Anzahl an minimalen Testfällen um eine vollständige
+					Zweigüberdeckung zu erhalten</h4>
 			</div>
 		</section>
 
@@ -208,7 +210,7 @@
 			</div>
 			<div class="flex-row">
 				<div class="flex-col">
-					<img src="staticfiles/mccabe_Kontrollstrukturen.png" alt="cpo_diagram" />
+					<img src="staticfiles/mccabe_Kontrollstrukturen.png" alt="cpo_diagram"/>
 				</div>
 				<div class="flex-col">
 					<ul class="dashed">
@@ -229,7 +231,9 @@
 			<div class="row">
 				<ul class="dashed">
 					<li>Komplexität eines Teilprogrammes sollte nicht > 10 sein</li>
-					<li>Umstritten<span class="codeBlue">,</span>  da nur Anweisungen wie <span class="codeBlue">if</span> die Komplexität erhöhen</li>
+					<li>Umstritten<span class="codeBlue">,</span> da nur Anweisungen wie <span class="codeBlue">if</span> die
+						Komplexität erhöhen
+					</li>
 					<li>Dadurch kann nur eine Aussage über den Testaufwand getroffen werden</li>
 				</ul>
 			</div>
@@ -240,29 +244,34 @@
 		</section>
 
 		<section class="slide17">
-				<div class="row">
-					<ul class="dashed">
-						<li>Metrik zur Bestimmung der Kopplung zwischen Objekten</li>
-						<li>Berücksichtigt die Anzahl der Klassen<span class="codeBlue">,</span>  welche mit dem Objekt gekoppelt sind<span class="codeBlue">,</span>  nicht die
-							<br> Häufigkeit der Verwendung</li>
-						<li>Berücksichtigt die Vererbungshierarchie</li>
-						<li>Dient zur Feststellung der Test- und Wartbarkeit</li>
-					</ul>
-				</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Metrik zur Bestimmung der Kopplung zwischen Objekten</li>
+					<li>Berücksichtigt die Anzahl der Klassen<span class="codeBlue">,</span> welche mit dem Objekt gekoppelt
+						sind<span class="codeBlue">,</span> nicht die
+						<br> Häufigkeit der Verwendung
+					</li>
+					<li>Berücksichtigt die Vererbungshierarchie</li>
+					<li>Dient zur Feststellung der Test- und Wartbarkeit</li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="slide18">
 			<div class="row">
 				<ul class="dashed">
-					<li>Analyse auf Modul/Package- Ebene<span class="codeBlue">,</span>  <br>da hier das Ergebnis besoders relevant ist</li>
-					<li>Ermittlung des Wertes unter Berücksichtigung der Gesamtzahl an Klassen und gekoppelten Klassen je Klasse</li>
+					<li>Analyse auf Modul/Package- Ebene<span class="codeBlue">,</span> <br>da hier das Ergebnis besoders relevant
+						ist
+					</li>
+					<li>Ermittlung des Wertes unter Berücksichtigung der Gesamtzahl an Klassen und gekoppelten Klassen je Klasse
+					</li>
 				</ul>
 			</div>
 		</section>
 
 		<section class="slide19">
 			<div class="row">
-				<img src="staticfiles/cpo_diagram.png" alt="ocpo_diag" />
+				<img src="staticfiles/cpo_diagram.png" alt="ocpo_diag"/>
 			</div>
 		</section>
 
@@ -273,20 +282,11 @@
 			<div class="row">
 				<ul class="dashed">
 					<li><span class="CodeBlue">0</span> = keine Verbindung zu anderen Klassen</li>
-					<li><span class="CodeBlue">niedrige Werte (<=5)</span> = optimal <br> <span class="codeBlue">&rAarr; </span>lose Kopplung der Klasse zu den Anderen</li>
-					<li><span class="CodeBlue">hohe Werte (>8)</span> = starke Kopplung <br><span class="codeBlue">&rAarr; </span>schwere Wart- und Testbarkeit da für jeden Testcase eine hohe Anzahl an Abhängigkeiten</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="slide21">
-			<div class="row">
-				<h3>Schwierigkeiten:</h3>
-			</div>
-			<div class="row">
-				<ul class="dashed">
-					<li><span>				Schlecht testbar
-							</span>
+					<li><span class="CodeBlue">niedrige Werte (<=5)</span> = optimal <br> <span class="codeBlue">&rAarr; </span>lose
+						Kopplung der Klasse zu den Anderen
+					</li>
+					<li><span class="CodeBlue">hohe Werte (>8)</span> = starke Kopplung <br><span class="codeBlue">&rAarr; </span>schwere
+						Wart- und Testbarkeit da für jeden Testcase eine hohe Anzahl an Abhängigkeiten
 					</li>
 				</ul>
 			</div>
@@ -314,6 +314,57 @@
 					<li>Worin liegt die Güte?</li>
 					<li>Verschiedene Vorgehensweisen <br> möglich</li>
 				</ul>
+			</div>
+		</section>
+
+		<section class="slide24">
+			<div class="row">
+				<h1 class="codeBlue">WMC</h1>
+			</div>
+			<div class="row">
+				<h2>Weighted methods per class</h2>
+			</div>
+		</section>
+
+		<section class="slide25">
+			<div class="row">
+				<h3>Maß für die Verständlichkeit und Erweiterbarkeit einer Klasse</h3>
+			</div>
+		</section>
+
+		<section class="slide26">
+			<div class="row">
+				<h3 class="codeBlue">
+					Generell:
+				</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Auswirkungen auf die Unterklassen größer, je höher Anzahl der Methoden der Oberklasse</li>
+					<li>niedriger WMC- Wert = überschaubare Vererbung, weniger fehleranfälliger Polymorphismus</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="slide27">
+			<div class="row">
+				<h4 class="codeBlue">Generell:</h4>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Klasse mit hoher Methodenanzahl vermutlich applikationsspezifisch, was Wiedervervendbarkeit reduziert</li>
+					<li>Anzahl der Methoden = Indikator für Zeit die für Entwicklung und Pflege einer Klasse benötigt wird</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide28">
+			<div class="row">
+				<h4 class="codeBlue">Berechnung des WMC </h4>
+			</div>
+			<div class="row">
+
 			</div>
 		</section>
 
