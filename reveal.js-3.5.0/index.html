@@ -13,7 +13,21 @@
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<link rel="stylesheet" href="custom_css/styles.css">
 
-
+	<script type="text/x-mathjax-config">
+		 MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+	</script>
+	<script type="text/javascript" async
+					src="bower_components/MathJax/MathJax.js">
+	</script>
 
 
 	<!-- Printing and PDF exports -->
@@ -325,6 +339,12 @@
 				<h2>Weighted methods per class</h2>
 			</div>
 		</section>
+		
+		<section class="slide25">
+			<div class="row">
+				<img src="staticfiles/wmc_beispiel.png" alt="wmc">
+			</div>
+		</section>
 
 		<section class="slide25">
 			<div class="row">
@@ -345,7 +365,7 @@
 				</ul>
 			</div>
 		</section>
-		
+
 		<section class="slide27">
 			<div class="row">
 				<h4 class="codeBlue">Generell:</h4>
@@ -361,10 +381,56 @@
 
 		<section class="slide28">
 			<div class="row">
-				<h4 class="codeBlue">Berechnung des WMC </h4>
+				<h3 class="codeBlue">Berechnung des WMC </h3>
 			</div>
 			<div class="row">
+				<div class="col">
+					<span class="wmc_formula">
+						$\sum_{i=1}^n c_i = WMC$
+					</span>
 
+				</div>
+			</div>
+		</section>
+
+		<section class="slide29">
+			<div class="row">
+				<h3 class="codeBlue">
+					Erläuterung
+				</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Summe der Anzahl n der Komplexitäten c jeder Methode = Wert von WMC</li>
+					<li>Standarddefinition: jede Methode hat Komplexität 1</li>
+				</ul>
+			</div>
+		</section>
+		<section class="slide30">
+			<div class="row">
+				<h3 class="codeBlue">
+					Kritik:
+				</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Fehleranfälligkeit kann nicht alleine mit WMC erfasst werden</li>
+					<li>Wird Komplexität mit McCabe erfasst, erhält man ehere eine Übersicht über die Komplexität der gesamten Klasse</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="slide31">
+			<div class="row">
+				<h3 class="codeBlue">
+					Sources:
+				</h3>
+			</div>
+			<div class="row">
+				<ul class="dashed">
+					<li>Sarker, M., An overview of object oriented design metrics, http://www8.cs.umu.se/education/examina/Rapporter/MuktamyeSarker.pdf</li>
+					<li>http://www.se.uni-hannover.de/priv/lehre_2004winter_seminar_software_entwurf/09_software-metriken.pdf</li>
+				</ul>
 			</div>
 		</section>
 

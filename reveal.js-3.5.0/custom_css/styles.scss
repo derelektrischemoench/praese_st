@@ -187,3 +187,13 @@ ul.dashed {
     align-items: center;
   }
 }
+
+.slide28 {
+  display: flex;
+  justify-content: center;
+
+  >.row:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+  }
+}

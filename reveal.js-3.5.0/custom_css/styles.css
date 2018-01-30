@@ -151,4 +151,11 @@ ul.dashed {
   flex-direction: column;
   align-items: center; }
 
+.slide28 {
+  display: flex;
+  justify-content: center; }
+  .slide28 > .row:nth-of-type(2) {
+    display: flex;
+    justify-content: center; }
+
 /*# sourceMappingURL=styles.css.map */
