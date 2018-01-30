@@ -160,10 +160,21 @@ ul.dashed {
 }
 
 .slide13 {
+  margin-top: -40px !important;
+
   .flex-row {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  .flex-row:nth-of-type(2) {
+    flex-direction: column;
+
+    img {
+      width: 60%;
+      align-self: center;
     }
   }
 }
